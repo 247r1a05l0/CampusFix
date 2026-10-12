@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8090/api/complaints";
+
+const API_URL = "http://localhost:8082/api/complaints";
 
 const form = document.getElementById('complaintForm');
 
