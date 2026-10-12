@@ -1,12 +1,16 @@
+
 pipeline {
     agent any
+
+    tools {
+        maven 'Maven-3.10.0'
+    }
 
     triggers {
         pollSCM('* * * * *')
     }
 
     stages {
-
         stage('Build & Test') {
             steps {
                 echo 'Building CampusFix...'
