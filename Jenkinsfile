@@ -1,4 +1,4 @@
-
+```groovy
 pipeline {
     agent any
 
@@ -29,6 +29,7 @@ pipeline {
                 bat '''
                     cd backend
                     docker build -t campusfix-backend:latest .
+                    docker images campusfix-backend
                 '''
             }
         }
@@ -44,4 +45,4 @@ pipeline {
         }
     }
 }
-docker images campusfix-backend
+```git 
