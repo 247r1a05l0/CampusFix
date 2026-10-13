@@ -44,3 +44,4 @@ pipeline {
         }
     }
 }
+docker images campusfix-backend
